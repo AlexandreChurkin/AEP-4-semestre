@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.divdiv{
+    background-color: #E5E9F2;
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+}
+.body{
+    background-color: #52638F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex; }
+
+.button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}

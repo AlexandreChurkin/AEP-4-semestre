@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="enviarrec.css" />
+    <title>Enviar reclamacao</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact" action="" method="post">
+        <h3>Envia sua reclamacao ou sugestao aqui</h3>
+        <h4>Para enviar sua reclamacao confirme suas credenciais</h4>
+        <fieldset>
+          <input
+            placeholder="Seu nome (caso prefira, pode preencher como anonimo)"
+            type="text"
+            tabindex="1"
+            id="nome"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Seu e-mail"
+            type="email"
+            tabindex="2"
+            id="email"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Sua senha" type="tel" tabindex="3" id="senha" />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Digite sua resposta aqui..."
+            tabindex="5"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+            <a href="tela.html">
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+          >
+            Submit
+          </button> </a>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

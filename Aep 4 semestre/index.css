@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: rgb(152, 196, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .buttonHeader {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .buttonHeader:hover {
+    border-color: #0c158f52;
+  }
+  .buttonlogin {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #47525e;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .buttonlogin:hover {
+    border-color: #0c158f52;
+  }
+  .logo {
+    color: #2133f88e;
+  }
+  .section1 {
+    height: 400px;
+    background-color: rgb(230, 243, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+  }
+  #texto1 {
+    font-size: 1cm;
+    color: #47525e;
+  }
+  #texto2 {
+    font-size: larger;
+    color: #586573;
+  }
+  .container1 {
+    font-family: "Roboto";
+    width: 600px;
+    margin: 30px auto 0;
+    display: block;
+    background: rgb(230, 243, 255);
+    padding: 10px 50px 50px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  h2 small {
+    font-weight: normal;
+    color: #888;
+    display: block;
+  }
+  
+  /* form starting stylings ------------------------------- */
+  .group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 8px;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  /* LABEL ======================================= */
+  label {
+    color: rgb(111, 134, 136);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label,
+  input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264ae;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264ae;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  .section2 {
+    height: 450px;
+    align-items: centerS;
+    background-color: #ffffff;
+    display: flex;
+    padding: 10px 25px;
+  }
+  #texto3 {
+    color: #47525e;
+  }
+  #texto4 {
+    color: #8190a5;
+  }
+  .site-footer {
+    background-color: #52638f;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+  }
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+  .site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+  .footer-links li {
+    display: block;
+  }
+  .footer-links a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links.inline li {
+    display: inline-block;
+  }
+  
+  @media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  }
